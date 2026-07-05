@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="FreshNest — premium couch, sofa & carpet cleaning. Deep steam cleaning, stain removal, and fabric protection with a satisfaction guarantee." />
+  <title>FreshNest · Couch, Sofa &amp; Carpet Cleaning</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Animated background bubbles -->
+  <div class="bubbles" aria-hidden="true"></div>
+
+  <!-- Nav -->
+  <header class="nav" id="nav">
+    <a href="#home" class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M4 12c0-3.3 2.7-6 6-6h4c3.3 0 6 2.7 6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M3 12h18v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4Z" stroke="currentColor" stroke-width="1.8"/><path d="M6 20v1M18 20v1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </span>
+      FreshNest
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#showcase">360° View</a>
+      <a href="#results">Results</a>
+      <a href="#reviews">Reviews</a>
+    </nav>
+    <a href="#quote" class="btn btn-nav">Get a Quote</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <div class="hero-copy reveal">
+        <span class="eyebrow">★ Rated 4.9/5 by 2,400+ homes</span>
+        <h1>Your couch,<br /><span class="grad">reborn.</span></h1>
+        <p class="lead">Deep steam cleaning for sofas, couches &amp; carpets. We lift out stains, odours and years of grime — and hand you back furniture that looks showroom-new.</p>
+        <div class="hero-cta">
+          <a href="#quote" class="btn btn-primary">Book a Cleaning</a>
+          <a href="#showcase" class="btn btn-ghost">Spin the 360° demo →</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong data-count="12000">0</strong><span>Pieces cleaned</span></div>
+          <div><strong data-count="4.9" data-decimals="1">0</strong><span>Avg. rating</span></div>
+          <div><strong data-count="100">0</strong><span>% guaranteed</span></div>
+        </div>
+      </div>
+
+      <!-- Floating 3D sofa card -->
+      <div class="hero-art reveal" aria-hidden="true">
+        <div class="sofa-stage">
+          <div class="sofa-glow"></div>
+          <div class="sofa-3d">
+            <svg viewBox="0 0 240 170" width="100%" height="100%">
+              <defs>
+                <linearGradient id="cush" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#8be9c9"/><stop offset="1" stop-color="#3ec9a7"/>
+                </linearGradient>
+                <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#59d6b4"/><stop offset="1" stop-color="#2bb28f"/>
+                </linearGradient>
+              </defs>
+              <ellipse cx="120" cy="150" rx="96" ry="12" fill="rgba(0,0,0,.25)"/>
+              <rect x="24" y="70" width="192" height="60" rx="18" fill="url(#body)"/>
+              <rect x="18" y="60" width="34" height="70" rx="14" fill="url(#cush)"/>
+              <rect x="188" y="60" width="34" height="70" rx="14" fill="url(#cush)"/>
+              <rect x="54" y="48" width="60" height="46" rx="12" fill="url(#cush)"/>
+              <rect x="126" y="48" width="60" height="46" rx="12" fill="url(#cush)"/>
+              <rect x="40" y="128" width="12" height="20" rx="4" fill="#1c8a6d"/>
+              <rect x="188" y="128" width="12" height="20" rx="4" fill="#1c8a6d"/>
+            </svg>
+          </div>
+          <span class="spark s1">✦</span>
+          <span class="spark s2">✧</span>
+          <span class="spark s3">✦</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint" aria-hidden="true"><span></span>Scroll</div>
+  </section>
+
+  <!-- Trust marquee -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Steam Deep Clean</span><span>•</span><span>Pet Stain &amp; Odour</span><span>•</span><span>Fabric Protection</span><span>•</span><span>Eco-Friendly Solutions</span><span>•</span><span>Same-Week Booking</span><span>•</span>
+      <span>Steam Deep Clean</span><span>•</span><span>Pet Stain &amp; Odour</span><span>•</span><span>Fabric Protection</span><span>•</span><span>Eco-Friendly Solutions</span><span>•</span><span>Same-Week Booking</span><span>•</span>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <section class="section" id="services">
+    <div class="section-head reveal">
+      <span class="kicker">What we clean</span>
+      <h2>One team for every soft surface</h2>
+      <p>Pick a service — or bundle them and save. Every job ends with a fresh-air fragrance and a 48-hour satisfaction promise.</p>
+    </div>
+    <div class="cards">
+      <article class="card reveal">
+        <div class="card-ic">🛋️</div>
+        <h3>Couch &amp; Sofa</h3>
+        <p>Hot-water extraction that reaches deep into cushions to remove dust mites, oils and set-in stains.</p>
+        <span class="card-price">from $89</span>
+      </article>
+      <article class="card reveal">
+        <div class="card-ic">🧶</div>
+        <h3>Carpets &amp; Rugs</h3>
+        <p>Powerful lift-and-rinse cleaning that revives matted fibres and pulls colour back to life.</p>
+        <span class="card-price">from $59</span>
+      </article>
+      <article class="card reveal">
+        <div class="card-ic">🐾</div>
+        <h3>Pet Treatment</h3>
+        <p>Enzyme neutralisers that destroy odour at the source — not just mask it. Safe for paws &amp; kids.</p>
+        <span class="card-price">from $39</span>
+      </article>
+      <article class="card reveal">
+        <div class="card-ic">🛡️</div>
+        <h3>Fabric Guard</h3>
+        <p>An invisible shield applied after cleaning so tomorrow's spills wipe away before they stain.</p>
+        <span class="card-price">from $29</span>
+      </article>
+    </div>
+  </section>
+
+  <!-- 360 Showcase -->
+  <section class="section showcase" id="showcase">
+    <div class="section-head reveal">
+      <span class="kicker">Interactive</span>
+      <h2>Spin it in 360°</h2>
+      <p>Drag the sofa — or let it turn on its own. This is the level of detail we clean to, from every angle.</p>
+    </div>
+    <div class="viewer-wrap reveal">
+      <div class="viewer" id="viewer360" role="img" aria-label="360 degree rotating sofa">
+        <canvas id="spinCanvas" width="640" height="420"></canvas>
+        <div class="viewer-badge"><span class="dot"></span>Drag to rotate</div>
+      </div>
+      <div class="viewer-controls">
+        <button class="round-btn" id="spinToggle" aria-label="Play or pause auto-rotate">⏸</button>
+        <input type="range" id="spinRange" min="0" max="359" value="0" aria-label="Rotation angle" />
+        <span class="angle" id="angleLabel">0°</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Before / After -->
+  <section class="section" id="results">
+    <div class="section-head reveal">
+      <span class="kicker">Real results</span>
+      <h2>Drag to reveal the difference</h2>
+      <p>Slide across to see the same cushion before and after a FreshNest deep clean.</p>
+    </div>
+    <div class="ba reveal" id="ba">
+      <div class="ba-img ba-after"><span class="ba-tag">After</span></div>
+      <div class="ba-img ba-before" id="baBefore"><span class="ba-tag">Before</span></div>
+      <div class="ba-handle" id="baHandle" role="slider" aria-label="Reveal before and after" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" tabindex="0">
+        <div class="ba-line"></div><div class="ba-knob">⟺</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="section process" id="process">
+    <div class="section-head reveal">
+      <span class="kicker">How it works</span>
+      <h2>Four steps to fresh</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><span class="step-n">01</span><h3>Book online</h3><p>Pick a slot in 60 seconds. Instant price, no call-backs needed.</p></div>
+      <div class="step reveal"><span class="step-n">02</span><h3>We inspect</h3><p>A tech maps stains &amp; fabric type to choose the safest method.</p></div>
+      <div class="step reveal"><span class="step-n">03</span><h3>Deep clean</h3><p>Steam extraction lifts the grime; fast-dry gear does the rest.</p></div>
+      <div class="step reveal"><span class="step-n">04</span><h3>Enjoy</h3><p>Sit down on furniture that smells — and feels — brand new.</p></div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="section" id="reviews">
+    <div class="section-head reveal">
+      <span class="kicker">Loved locally</span>
+      <h2>What neighbours are saying</h2>
+    </div>
+    <div class="reviews">
+      <figure class="review reveal">
+        <div class="stars">★★★★★</div>
+        <blockquote>"Our cream sofa had three years of toddler and dog on it. It came back looking like the day we bought it. Genuinely stunned."</blockquote>
+        <figcaption><span class="avatar" style="--a:#7c5cff">M</span>Maya R. · Verified</figcaption>
+      </figure>
+      <figure class="review reveal">
+        <div class="stars">★★★★★</div>
+        <blockquote>"Booked Monday, cleaned Wednesday. The 360 photos they sent afterwards were a nice touch. Odour from our cat is completely gone."</blockquote>
+        <figcaption><span class="avatar" style="--a:#3ec9a7">D</span>Daniel K. · Verified</figcaption>
+      </figure>
+      <figure class="review reveal">
+        <div class="stars">★★★★★</div>
+        <blockquote>"Carpets in the whole flat done in an afternoon and dry by dinner. Polite, tidy, and worth every penny."</blockquote>
+        <figcaption><span class="avatar" style="--a:#ff8a5c">S</span>Sofia L. · Verified</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Quote / CTA -->
+  <section class="section quote" id="quote">
+    <div class="quote-card reveal">
+      <div class="quote-copy">
+        <span class="kicker">Get started</span>
+        <h2>Book your fresh start</h2>
+        <p>Tell us what needs reviving and we'll send an instant estimate. No deposit, no pressure.</p>
+        <ul class="quote-list">
+          <li>✓ Free stain assessment</li>
+          <li>✓ 48-hour satisfaction guarantee</li>
+          <li>✓ Eco-friendly, child &amp; pet safe</li>
+        </ul>
+      </div>
+      <form class="quote-form" id="quoteForm" novalidate>
+        <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" placeholder="Jamie Smith" required /></div>
+        <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" placeholder="you@email.com" required /></div>
+        <div class="field"><label for="service">Service</label>
+          <select id="service" name="service">
+            <option>Couch / Sofa</option><option>Carpet / Rug</option><option>Pet Treatment</option><option>Full Home Bundle</option>
+          </select>
+        </div>
+        <div class="field"><label for="notes">Notes</label><textarea id="notes" name="notes" rows="2" placeholder="2-seater, red wine stain on the left cushion…"></textarea></div>
+        <button type="submit" class="btn btn-primary btn-block">Get my instant quote</button>
+        <p class="form-msg" id="formMsg" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="foot-top">
+      <div class="brand"><span class="brand-mark"><svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M4 12c0-3.3 2.7-6 6-6h4c3.3 0 6 2.7 6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M3 12h18v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4Z" stroke="currentColor" stroke-width="1.8"/></svg></span>FreshNest</div>
+      <p>Premium couch, sofa &amp; carpet cleaning — done right, guaranteed.</p>
+      <div class="foot-contact">
+        <a href="tel:+18005551234">📞 1-800-555-1234</a>
+        <a href="mailto:hello@freshnest.example">✉ hello@freshnest.example</a>
+      </div>
+    </div>
+    <div class="foot-bottom"><span>© <span id="year"></span> FreshNest Cleaning Co.</span><span>Made with ♥ for cleaner homes</span></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
