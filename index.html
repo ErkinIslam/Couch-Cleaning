@@ -24,7 +24,7 @@
     </a>
     <nav class="nav-links" aria-label="Primary">
       <a href="#services">Services</a>
-      <a href="#showcase">360° View</a>
+      <a href="#showcase">3D View</a>
       <a href="#results">Results</a>
       <a href="#reviews">Reviews</a>
     </nav>
@@ -43,7 +43,7 @@
         <p class="lead">Deep steam cleaning for sofas, couches &amp; carpets. We lift out stains, odours and years of grime — and hand you back furniture that looks showroom-new.</p>
         <div class="hero-cta">
           <a href="#quote" class="btn btn-primary">Book a Cleaning</a>
-          <a href="#showcase" class="btn btn-ghost">Spin the 360° demo →</a>
+          <a href="#showcase" class="btn btn-ghost">See the 3D view →</a>
         </div>
         <div class="hero-stats">
           <div><strong data-count="12000">0</strong><span>Pieces cleaned</span></div>
@@ -52,29 +52,14 @@
         </div>
       </div>
 
-      <!-- Floating 3D sofa card -->
+      <!-- Floating sofa photo -->
       <div class="hero-art reveal" aria-hidden="true">
         <div class="sofa-stage">
           <div class="sofa-glow"></div>
           <div class="sofa-3d">
-            <svg viewBox="0 0 240 170" width="100%" height="100%">
-              <defs>
-                <linearGradient id="cush" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0" stop-color="#8be9c9"/><stop offset="1" stop-color="#3ec9a7"/>
-                </linearGradient>
-                <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0" stop-color="#59d6b4"/><stop offset="1" stop-color="#2bb28f"/>
-                </linearGradient>
-              </defs>
-              <ellipse cx="120" cy="150" rx="96" ry="12" fill="rgba(0,0,0,.25)"/>
-              <rect x="24" y="70" width="192" height="60" rx="18" fill="url(#body)"/>
-              <rect x="18" y="60" width="34" height="70" rx="14" fill="url(#cush)"/>
-              <rect x="188" y="60" width="34" height="70" rx="14" fill="url(#cush)"/>
-              <rect x="54" y="48" width="60" height="46" rx="12" fill="url(#cush)"/>
-              <rect x="126" y="48" width="60" height="46" rx="12" fill="url(#cush)"/>
-              <rect x="40" y="128" width="12" height="20" rx="4" fill="#1c8a6d"/>
-              <rect x="188" y="128" width="12" height="20" rx="4" fill="#1c8a6d"/>
-            </svg>
+            <div class="sofa-photo-card">
+              <img src="images/sofa.webp" alt="Freshly cleaned sofa" loading="eager" />
+            </div>
           </div>
           <span class="spark s1">✦</span>
           <span class="spark s2">✧</span>
@@ -128,21 +113,23 @@
     </div>
   </section>
 
-  <!-- 360 Showcase -->
+  <!-- Interactive 3D Showcase -->
   <section class="section showcase" id="showcase">
     <div class="section-head reveal">
       <span class="kicker">Interactive</span>
-      <h2>Spin it in 360°</h2>
-      <p>Drag the sofa — or let it turn on its own. This is the level of detail we clean to, from every angle.</p>
+      <h2>Inspect it from every angle</h2>
+      <p>Drag the sofa left and right — or let it sway on its own. This is the finish we deliver, up close.</p>
     </div>
     <div class="viewer-wrap reveal">
-      <div class="viewer" id="viewer360" role="img" aria-label="360 degree rotating sofa">
-        <canvas id="spinCanvas" width="640" height="420"></canvas>
+      <div class="viewer" id="viewer360" role="img" aria-label="Interactive sofa view">
+        <div class="spin3d" id="spin3d">
+          <img src="images/sofa.webp" alt="Cleaned sofa" loading="lazy" />
+        </div>
         <div class="viewer-badge"><span class="dot"></span>Drag to rotate</div>
       </div>
       <div class="viewer-controls">
         <button class="round-btn" id="spinToggle" aria-label="Play or pause auto-rotate">⏸</button>
-        <input type="range" id="spinRange" min="0" max="359" value="0" aria-label="Rotation angle" />
+        <input type="range" id="spinRange" min="-40" max="40" value="0" aria-label="Viewing angle" />
         <span class="angle" id="angleLabel">0°</span>
       </div>
     </div>
@@ -153,11 +140,11 @@
     <div class="section-head reveal">
       <span class="kicker">Real results</span>
       <h2>Drag to reveal the difference</h2>
-      <p>Slide across to see the same cushion before and after a FreshNest deep clean.</p>
+      <p>Slide across to see the same sofa before and after a FreshNest deep clean.</p>
     </div>
     <div class="ba reveal" id="ba">
-      <div class="ba-img ba-after"><span class="ba-tag">After</span></div>
-      <div class="ba-img ba-before" id="baBefore"><span class="ba-tag">Before</span></div>
+      <div class="ba-img ba-after"><img src="images/sofa.webp" alt="Sofa after cleaning" /><span class="ba-tag">After</span></div>
+      <div class="ba-img ba-before" id="baBefore"><img src="images/sofa.webp" alt="Sofa before cleaning" /><span class="grime" aria-hidden="true"></span><span class="ba-tag">Before</span></div>
       <div class="ba-handle" id="baHandle" role="slider" aria-label="Reveal before and after" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" tabindex="0">
         <div class="ba-line"></div><div class="ba-knob">⟺</div>
       </div>
